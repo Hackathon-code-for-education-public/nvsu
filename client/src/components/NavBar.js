@@ -29,7 +29,7 @@ const NavBar = observer(() => {
 			<Container fluid>
 				<Navbar.Brand className="d-flex align-items-center">
 					<NavLink className="nav-link" to={DEFAULT_ROUTE}>
-						НВГУ
+						canChooseUni
 					</NavLink>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
