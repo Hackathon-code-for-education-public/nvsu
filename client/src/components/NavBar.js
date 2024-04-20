@@ -10,8 +10,6 @@ import {
 import { Container, Button, Form, Nav, Navbar } from 'react-bootstrap'
 import { observer } from 'mobx-react-lite'
 
-import search from '../assets/search.svg'
-import basket from '../assets/basket.svg'
 import signUpIcon from '../assets/signUpIcon.png'
 
 const NavBar = observer(() => {
@@ -35,12 +33,12 @@ const NavBar = observer(() => {
 			<Container fluid>
 				<Navbar.Brand className="d-flex align-items-center">
 					<NavLink className="nav-link" to={SHOP_ROUTE}>
-						DаNилSервис
+						НВГУ
 					</NavLink>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav" className="w-100">
-					<Nav className="w-100">
+					{/* <Nav className="w-100">
 						<Form className="d-flex navbar-seacrh w-100 m-auto">
 							<button
 								className="navbar--search__button"
@@ -51,7 +49,7 @@ const NavBar = observer(() => {
 								<img src={search} alt="поиск" />
 							</button>
 						</Form>
-					</Nav>
+					</Nav> */}
 				</Navbar.Collapse>
 				{user.isAuth ? (
 					<Nav className="ml-3">
@@ -61,7 +59,7 @@ const NavBar = observer(() => {
 								onClick={() => history.push(ADMIN_ROUTE)}
 								className="mr-4 mb-1"
 							>
-								Управление магазином
+								Управление сайтом
 							</Button>
 						)}
 						<Button
@@ -69,8 +67,8 @@ const NavBar = observer(() => {
 							onClick={() => history.push(BASKET_ROUTE)}
 							className="mr-4 mb-1"
 						>
-							<img src={basket} alt="корзина" />
-							Корзина
+							{/* <img src={basket} alt="Личный кабинет" /> */}
+							Личный кабинет
 						</Button>
 						<Button
 							variant={'outline-dark'}
