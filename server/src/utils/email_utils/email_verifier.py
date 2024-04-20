@@ -2,7 +2,7 @@ from itsdangerous import URLSafeTimedSerializer as Serializer
 from itsdangerous.exc import SignatureExpired, BadSignature  # Импорт исключений
 from flask_mail import Message
 from flask import current_app
-from server.config import FlaskMailConfig, FlaskAppConfig
+from config import FlaskMailConfig, FlaskAppConfig
 
 
 def generate_confirmation_token(email):

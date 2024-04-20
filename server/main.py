@@ -13,6 +13,9 @@ from src.controllers.user.update_user_controller import update_user_blueprint
 from src.controllers.sections.create_audience_controller import corps_creation_blueprint
 from src.controllers.sections.create_audience_controller import create_floor_blueprint
 from src.controllers.sections.create_audience_controller import create_audience_blueprint
+from src.controllers.university.create_university_controller import create_university_blueprint
+from src.controllers.university.get_all_universities_controller import get_all_universities_blueprint
+from src.controllers.university.get_all_universities_controller import get_university_blueprint
 
 mail = Mail()
 app = Flask(__name__)
@@ -33,9 +36,14 @@ app.register_blueprint(get_all_users_blueprint)
 app.register_blueprint(get_user_blueprint)
 app.register_blueprint(delete_user_blueprint)
 app.register_blueprint(update_user_blueprint)
+
 app.register_blueprint(corps_creation_blueprint)
 app.register_blueprint(create_floor_blueprint)
 app.register_blueprint(create_audience_blueprint)
+
+app.register_blueprint(create_university_blueprint)
+app.register_blueprint(get_all_universities_blueprint)
+app.register_blueprint(get_university_blueprint)
 
 
 def create_db():

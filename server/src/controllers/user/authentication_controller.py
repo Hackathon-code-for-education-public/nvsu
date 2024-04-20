@@ -1,11 +1,11 @@
 import logging
 from flask import current_app
-from server.src.crypto.hash import hashing, compare_hashes
+from src.crypto.hash import hashing, compare_hashes
 from flask import Blueprint, request, jsonify, session
-from server.models import db, User
+from models import db, User
 from sqlalchemy.exc import SQLAlchemyError
-from server.src.utils.data_validation import UserRegistrationSchema
-from server.src.utils.email_utils.email_verifier import generate_confirmation_token, send_confirmation_email, confirm_token
+from src.utils.data_validation import UserRegistrationSchema
+from src.utils.email_utils.email_verifier import generate_confirmation_token, send_confirmation_email, confirm_token
 
 # Настройка логгера
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')

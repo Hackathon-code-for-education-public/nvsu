@@ -1,5 +1,5 @@
 from marshmallow import Schema, fields, validate, ValidationError, validates
-from server.config import UserConfig
+from config import UserConfig
 import re
 
 
