@@ -1,0 +1,7 @@
+/client/node_modules
+/client/.eslintcache
+.vscode
+.idea
+/client/test.ts
+
+*.mp4

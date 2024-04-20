@@ -1,0 +1,224 @@
+:root {
+	/* --bg-color: #222428; */
+	--bg-color: white;
+	--text-color: black;
+}
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+		sans-serif;
+	font-color: black;
+}
+
+iframe {
+	display: none;
+}
+
+body {
+	/* background-color: #222428; */
+	background-color: var(--bg-color);
+}
+
+img {
+	max-width: 100%;
+}
+
+/* a.active::after {
+content: '';
+display: block;
+height: 2px;
+background-color: white;
+} */
+
+h3,
+h1 {
+	font-size: 150%;
+	color: #313131;
+}
+
+/* Logo */
+.navbar-brand {
+	display: flex;
+	align-items: center;
+	box-sizing: content-box;
+	text-align: left;
+	max-height: 64px;
+	float: left;
+	background: linear-gradient(0deg, #fc8507 0%, #ffa218 100%);
+	background-image: linear-gradient(
+		0deg,
+		rgb(252, 133, 7) 0%,
+		rgb(255, 162, 24) 100%
+	);
+	border-radius: 12px;
+	position: relative;
+}
+
+a,
+.nav-link {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.nav-link:active,
+.nav-link:hover {
+	color: white;
+}
+
+.btn {
+	border-radius: 10px;
+}
+
+.btn-outline-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active {
+	border-color: rgb(255, 162, 24);
+	outline-color: rgb(255, 162, 24);
+	color: rgb(255, 162, 24);
+	background-color: white;
+	background-image: none;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-primary {
+	background-image: linear-gradient(0deg, #fc8507, #ffa218);
+	color: #fff !important;
+	background-color: rgb(255, 162, 24) !important;
+	border-color: rgb(255, 162, 24) !important;
+	outline-color: rgb(255, 162, 24);
+}
+
+.dns-text-color {
+	color: rgb(255, 162, 24);
+}
+
+.badge {
+	height: max-content;
+}
+
+.list-group-item.active {
+	border-radius: 4px;
+	background: #f5f5f5;
+	border: none;
+	font-weight: 500;
+	color: #a5a9af;
+}
+
+.spinner-block {
+	min-height: 100vh;
+}
+
+.navbar-basket__icon {
+	padding: 5px 0 5px;
+	width: 30px;
+	height: 38px;
+}
+
+.navbar-basket__text {
+	display: block;
+	font-weight: 500;
+	text-align: left;
+	font-size: 0.75rem;
+	color: #a5a9af;
+}
+
+.navbar-basket__price {
+	font-size: 0.875rem;
+	display: block;
+	font-weight: 500;
+}
+
+.navbar-seacrh {
+	max-width: 600px;
+	position: relative;
+}
+
+.navbar--search__input {
+	border: 1px solid #ffd000;
+	height: 36px;
+	background: #f5f5f5;
+	border-radius: 4px;
+	padding: 10px 60px 10px 15px;
+	cursor: pointer;
+}
+
+.navbar--search__button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	z-index: 1;
+	position: absolute;
+	right: 10px;
+	height: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.device-info__value,
+.device-info__name {
+	z-index: 1;
+	background-color: #fff;
+}
+
+.device__list .list-group-item {
+	position: relative;
+}
+
+.device-card__btn {
+	max-width: 200px;
+}
+
+.device-card__image {
+	max-width: 550px;
+	width: 100%;
+}
+
+@media (min-width: 576px) {
+	.device-info__card {
+		padding: 40px 10% 32px;
+		box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+		border-radius: 8px;
+	}
+}
+
+@media (max-width: 992px) {
+	.device-info__buy {
+		order: -1;
+	}
+
+	.device-info__card {
+		max-width: 310px;
+	}
+}
+
+@media (min-width: 768px) {
+	.device__list .list-group-item:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 27px;
+		z-index: 0;
+		width: 100%;
+		height: 1px;
+		border-bottom: 1px dotted #a5a9af;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-seacrh {
+		max-width: 300px;
+	}
+
+	.navbar-nav {
+		flex-wrap: wrap;
+	}
+}
