@@ -4,7 +4,7 @@ import { Context } from '../index'
 // import { fetchBrands, fetchTypes } from '../http/deviceAPI'
 import { observer } from 'mobx-react-lite'
 
-const Admin = observer((props) => {
+const AdminPage = observer((props) => {
 	// const { device } = useContext(Context)
 	// const [brandVisible, setBrandVisible] = useState(false)
 	// const [typeVisible, setTypeVisible] = useState(false)
@@ -124,4 +124,4 @@ const Admin = observer((props) => {
 	)
 })
 
-export default Admin
+export default AdminPage
